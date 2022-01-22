@@ -1,0 +1,119 @@
+2022-01-20 09:51:20,030 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 609958
+2022-01-20 09:51:20,154 - INFO - apply cost: 123.9560546875 ms
+2022-01-20 09:51:29,054 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 609958
+2022-01-20 09:51:29,204 - INFO - apply cost: 149.9111328125 ms
+2022-01-20 09:51:33,638 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 609958
+2022-01-20 09:51:33,778 - INFO - apply cost: 140.865966796875 ms
+2022-01-20 10:41:20,997 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-20 10:49:10,347 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-20 10:53:13,827 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-20 10:53:34,170 - INFO - 127.0.0.1 - - [20/Jan/2022 10:53:34] "GET / HTTP/1.1" 200 -
+2022-01-20 10:53:53,808 - INFO - 127.0.0.1 - - [20/Jan/2022 10:53:53] "GET /health HTTP/1.1" 200 -
+2022-01-20 10:55:37,944 - INFO - 127.0.0.1 - - [20/Jan/2022 10:55:37] "GET / HTTP/1.1" 200 -
+2022-01-20 10:58:33,745 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-20 10:58:43,505 - INFO - 127.0.0.1 - - [20/Jan/2022 10:58:43] "GET / HTTP/1.1" 200 -
+2022-01-20 10:59:04,854 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-20 10:59:11,224 - INFO - 127.0.0.1 - - [20/Jan/2022 10:59:11] "GET /health HTTP/1.1" 200 -
+2022-01-20 11:01:08,566 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-20 11:01:14,827 - INFO - 127.0.0.1 - - [20/Jan/2022 11:01:14] "GET /health HTTP/1.1" 200 -
+2022-01-20 11:20:28,621 - INFO - 127.0.0.1 - - [20/Jan/2022 11:20:28] "GET /health HTTP/1.1" 200 -
+2022-01-20 11:21:23,574 - INFO - 127.0.0.1 - - [20/Jan/2022 11:21:23] "GET /health HTTP/1.1" 200 -
+2022-01-20 14:31:27,651 - INFO - 127.0.0.1 - - [20/Jan/2022 14:31:27] "GET /health HTTP/1.1" 200 -
+2022-01-21 14:10:25,437 - INFO - 127.0.0.1 - - [21/Jan/2022 14:10:25] "GET /health HTTP/1.1" 200 -
+2022-01-21 14:10:26,910 - INFO - 127.0.0.1 - - [21/Jan/2022 14:10:26] "GET /health HTTP/1.1" 200 -
+2022-01-21 14:20:26,148 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101970
+2022-01-21 14:20:26,189 - INFO - unique_endpoints {''}
+2022-01-21 14:20:26,189 - INFO - Found /home/deployment/src/algorithm/ppgan/apps/photo2cartoon_genA2B_weight.pdparams
+2022-01-21 14:20:26,788 - INFO - unique_endpoints {''}
+2022-01-21 14:20:26,788 - INFO - Found /home/deployment/src/algorithm/ppgan/faceutils/face_segmentation/faceseg_FCN-HRNetW18.pdparams
+2022-01-21 14:20:28,709 - INFO - unique_endpoints {''}
+2022-01-21 14:20:28,709 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-01-21 14:20:34,629 - INFO - apply cost: 8481.636962890625 ms
+2022-01-21 15:00:54,468 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101970
+2022-01-21 15:00:54,543 - INFO - unique_endpoints {''}
+2022-01-21 15:00:54,543 - INFO - Found /home/deployment/src/algorithm/ppgan/apps/photo2cartoon_genA2B_weight.pdparams
+2022-01-21 15:00:55,133 - INFO - unique_endpoints {''}
+2022-01-21 15:00:55,133 - INFO - Found /home/deployment/src/algorithm/ppgan/faceutils/face_segmentation/faceseg_FCN-HRNetW18.pdparams
+2022-01-21 15:00:57,017 - INFO - unique_endpoints {''}
+2022-01-21 15:00:57,018 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-01-21 15:01:02,895 - ERROR - [Exception] {"error": {"message": "name 'ouput_base64' is not defined", "stacktrace": "Traceback (most recent call last):\n  File \"/home/deployment/app.py\", line 34, in get_response\n    result = call_algorithm()\n  File \"/home/deployment/app.py\", line 85, in call_algorithm\n    result = deployment.apply(data)\n  File \"./src/deployment.py\", line 18, in apply\n    return ouput_base64\nNameError: name 'ouput_base64' is not defined\n", "error_type": "ModelError"}}
+2022-01-21 15:02:05,767 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101970
+2022-01-21 15:02:05,820 - INFO - unique_endpoints {''}
+2022-01-21 15:02:05,820 - INFO - Found /home/deployment/src/algorithm/ppgan/apps/photo2cartoon_genA2B_weight.pdparams
+2022-01-21 15:02:06,413 - INFO - unique_endpoints {''}
+2022-01-21 15:02:06,413 - INFO - Found /home/deployment/src/algorithm/ppgan/faceutils/face_segmentation/faceseg_FCN-HRNetW18.pdparams
+2022-01-21 15:02:08,291 - INFO - unique_endpoints {''}
+2022-01-21 15:02:08,292 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-01-21 15:02:14,141 - INFO - apply cost: 8374.4306640625 ms
+2022-01-21 15:16:41,537 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101970
+2022-01-21 15:16:41,639 - INFO - unique_endpoints {''}
+2022-01-21 15:16:41,639 - INFO - Found /home/deployment/src/algorithm/ppgan/apps/photo2cartoon_genA2B_weight.pdparams
+2022-01-21 15:16:42,235 - INFO - unique_endpoints {''}
+2022-01-21 15:16:42,235 - INFO - Found /home/deployment/src/algorithm/ppgan/faceutils/face_segmentation/faceseg_FCN-HRNetW18.pdparams
+2022-01-21 15:16:44,152 - INFO - unique_endpoints {''}
+2022-01-21 15:16:44,152 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-01-21 15:16:49,976 - INFO - apply cost: 8438.83154296875 ms
+2022-01-21 15:16:49,981 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101970
+2022-01-21 15:16:49,982 - INFO - unique_endpoints {''}
+2022-01-21 15:16:49,982 - INFO - Found /home/deployment/src/algorithm/ppgan/apps/photo2cartoon_genA2B_weight.pdparams
+2022-01-21 15:16:50,468 - INFO - unique_endpoints {''}
+2022-01-21 15:16:50,468 - INFO - Found /home/deployment/src/algorithm/ppgan/faceutils/face_segmentation/faceseg_FCN-HRNetW18.pdparams
+2022-01-21 15:16:52,314 - INFO - unique_endpoints {''}
+2022-01-21 15:16:52,314 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-01-21 15:16:58,121 - INFO - apply cost: 8139.43212890625 ms
+2022-01-21 15:19:28,695 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101970
+2022-01-21 15:19:28,768 - INFO - unique_endpoints {''}
+2022-01-21 15:19:28,768 - INFO - Found /home/deployment/src/algorithm/ppgan/apps/photo2cartoon_genA2B_weight.pdparams
+2022-01-21 15:19:29,362 - INFO - unique_endpoints {''}
+2022-01-21 15:19:29,362 - INFO - Found /home/deployment/src/algorithm/ppgan/faceutils/face_segmentation/faceseg_FCN-HRNetW18.pdparams
+2022-01-21 15:19:31,249 - INFO - unique_endpoints {''}
+2022-01-21 15:19:31,249 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-01-21 15:19:37,147 - INFO - apply cost: 8451.82080078125 ms
+2022-01-21 15:25:51,779 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101970
+2022-01-21 15:25:51,854 - INFO - unique_endpoints {''}
+2022-01-21 15:25:51,854 - INFO - Found /home/deployment/src/algorithm/ppgan/apps/photo2cartoon_genA2B_weight.pdparams
+2022-01-21 15:25:52,442 - INFO - unique_endpoints {''}
+2022-01-21 15:25:52,442 - INFO - Found /home/deployment/src/algorithm/ppgan/faceutils/face_segmentation/faceseg_FCN-HRNetW18.pdparams
+2022-01-21 15:25:54,350 - INFO - unique_endpoints {''}
+2022-01-21 15:25:54,350 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-01-21 15:26:00,151 - INFO - apply cost: 8371.931640625 ms
+2022-01-21 15:39:03,899 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101970
+2022-01-21 15:39:03,952 - INFO - unique_endpoints {''}
+2022-01-21 15:39:03,952 - INFO - Found /home/deployment/src/algorithm/ppgan/apps/photo2cartoon_genA2B_weight.pdparams
+2022-01-21 15:39:04,542 - INFO - unique_endpoints {''}
+2022-01-21 15:39:04,542 - INFO - Found /home/deployment/src/algorithm/ppgan/faceutils/face_segmentation/faceseg_FCN-HRNetW18.pdparams
+2022-01-21 15:39:06,465 - INFO - unique_endpoints {''}
+2022-01-21 15:39:06,465 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-01-21 15:39:12,283 - INFO - apply cost: 8384.195068359375 ms
+2022-01-21 15:46:02,762 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101970
+2022-01-21 15:46:02,804 - INFO - unique_endpoints {''}
+2022-01-21 15:46:02,804 - INFO - Found /home/deployment/src/algorithm/ppgan/apps/photo2cartoon_genA2B_weight.pdparams
+2022-01-21 15:46:03,393 - INFO - unique_endpoints {''}
+2022-01-21 15:46:03,393 - INFO - Found /home/deployment/src/algorithm/ppgan/faceutils/face_segmentation/faceseg_FCN-HRNetW18.pdparams
+2022-01-21 15:46:05,279 - INFO - unique_endpoints {''}
+2022-01-21 15:46:05,279 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-01-21 15:46:11,053 - INFO - apply cost: 8291.94287109375 ms
+2022-01-21 16:10:43,236 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101970
+2022-01-21 16:10:43,286 - INFO - unique_endpoints {''}
+2022-01-21 16:10:43,286 - INFO - Found /home/deployment/src/algorithm/ppgan/apps/photo2cartoon_genA2B_weight.pdparams
+2022-01-21 16:10:43,875 - INFO - unique_endpoints {''}
+2022-01-21 16:10:43,875 - INFO - Found /home/deployment/src/algorithm/ppgan/faceutils/face_segmentation/faceseg_FCN-HRNetW18.pdparams
+2022-01-21 16:10:45,790 - INFO - unique_endpoints {''}
+2022-01-21 16:10:45,791 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-01-21 16:10:51,639 - ERROR - [Exception] {"error": {"message": "'tuple' object has no attribute 'tobytes'", "stacktrace": "Traceback (most recent call last):\n  File \"/home/deployment/app.py\", line 34, in get_response\n    result = call_algorithm()\n  File \"/home/deployment/app.py\", line 85, in call_algorithm\n    result = deployment.apply(data)\n  File \"./src/deployment.py\", line 18, in apply\n    image_bytes = data.tobytes()\nAttributeError: 'tuple' object has no attribute 'tobytes'\n", "error_type": "ModelError"}}
+2022-01-21 16:18:48,911 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101970
+2022-01-21 16:18:48,958 - INFO - unique_endpoints {''}
+2022-01-21 16:18:48,958 - INFO - Found /home/deployment/src/algorithm/ppgan/apps/photo2cartoon_genA2B_weight.pdparams
+2022-01-21 16:18:49,548 - INFO - unique_endpoints {''}
+2022-01-21 16:18:49,548 - INFO - Found /home/deployment/src/algorithm/ppgan/faceutils/face_segmentation/faceseg_FCN-HRNetW18.pdparams
+2022-01-21 16:18:51,462 - INFO - unique_endpoints {''}
+2022-01-21 16:18:51,462 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-01-21 16:18:57,285 - INFO - apply cost: 8373.27490234375 ms
+2022-01-21 16:27:35,906 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101970
+2022-01-21 16:27:35,960 - INFO - unique_endpoints {''}
+2022-01-21 16:27:35,960 - INFO - Found /home/deployment/src/algorithm/ppgan/apps/photo2cartoon_genA2B_weight.pdparams
+2022-01-21 16:27:36,445 - INFO - unique_endpoints {''}
+2022-01-21 16:27:36,445 - INFO - Found /home/deployment/src/algorithm/ppgan/faceutils/face_segmentation/faceseg_FCN-HRNetW18.pdparams
+2022-01-21 16:27:38,270 - INFO - unique_endpoints {''}
+2022-01-21 16:27:38,270 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-01-21 16:27:44,197 - INFO - apply cost: 8291.142578125 ms

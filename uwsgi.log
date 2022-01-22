@@ -1,0 +1,492 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Fri Jan 21 14:15:10 2022] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 20 January 2022 09:52:55
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: izuf65cyta1bz7xpttxz8bz
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/deployment
+writing pidfile to /home/deployment/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/deployment
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 100 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 7
+uwsgi socket 0 bound to TCP address 127.0.0.1:35694 (port auto-assigned) fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Nov 16 2020, 16:55:22)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x2176f40
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 2216128 bytes (2164 KB) for 100 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8545)
+spawned uWSGI worker 1 (pid: 8546, cores: 100)
+spawned uWSGI http 1 (pid: 8547)
+/usr/lib/python3.6/site-packages/setuptools/depends.py:2: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+/usr/local/lib64/python3.6/site-packages/skimage/data/__init__.py:107: DeprecationWarning: 
+    Importing file_hash from pooch.utils is DEPRECATED. Please import from the
+    top-level namespace (`from pooch import file_hash`) instead, which is fully
+    backwards compatible with pooch >= 0.1.
+    
+  return file_hash(path) == expected_hash
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2176f40 pid: 8546 (default app)
+*** running gevent loop engine [addr:0x491050] ***
+*** Starting uWSGI 2.0.20 (64bit) on [Fri Jan 21 15:00:42 2022] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 20 January 2022 09:52:55
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: izuf65cyta1bz7xpttxz8bz
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/deployment
+writing pidfile to /home/deployment/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/deployment
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 100 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 7
+uwsgi socket 0 bound to TCP address 127.0.0.1:34729 (port auto-assigned) fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Nov 16 2020, 16:55:22)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x1383f50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 2216128 bytes (2164 KB) for 100 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8631)
+spawned uWSGI worker 1 (pid: 8632, cores: 100)
+spawned uWSGI http 1 (pid: 8633)
+/usr/lib/python3.6/site-packages/setuptools/depends.py:2: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+/usr/local/lib64/python3.6/site-packages/skimage/data/__init__.py:107: DeprecationWarning: 
+    Importing file_hash from pooch.utils is DEPRECATED. Please import from the
+    top-level namespace (`from pooch import file_hash`) instead, which is fully
+    backwards compatible with pooch >= 0.1.
+    
+  return file_hash(path) == expected_hash
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x1383f50 pid: 8632 (default app)
+*** running gevent loop engine [addr:0x491050] ***
+*** Starting uWSGI 2.0.20 (64bit) on [Fri Jan 21 15:01:59 2022] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 20 January 2022 09:52:55
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: izuf65cyta1bz7xpttxz8bz
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/deployment
+writing pidfile to /home/deployment/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/deployment
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 100 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 7
+uwsgi socket 0 bound to TCP address 127.0.0.1:41892 (port auto-assigned) fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Nov 16 2020, 16:55:22)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x26e5f50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 2216128 bytes (2164 KB) for 100 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8671)
+spawned uWSGI worker 1 (pid: 8672, cores: 100)
+spawned uWSGI http 1 (pid: 8673)
+/usr/lib/python3.6/site-packages/setuptools/depends.py:2: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+/usr/local/lib64/python3.6/site-packages/skimage/data/__init__.py:107: DeprecationWarning: 
+    Importing file_hash from pooch.utils is DEPRECATED. Please import from the
+    top-level namespace (`from pooch import file_hash`) instead, which is fully
+    backwards compatible with pooch >= 0.1.
+    
+  return file_hash(path) == expected_hash
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x26e5f50 pid: 8672 (default app)
+*** running gevent loop engine [addr:0x491050] ***
+*** Starting uWSGI 2.0.20 (64bit) on [Fri Jan 21 15:16:35 2022] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 20 January 2022 09:52:55
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: izuf65cyta1bz7xpttxz8bz
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/deployment
+writing pidfile to /home/deployment/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/deployment
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 100 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 7
+uwsgi socket 0 bound to TCP address 127.0.0.1:44968 (port auto-assigned) fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Nov 16 2020, 16:55:22)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x75ff50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 2216128 bytes (2164 KB) for 100 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8719)
+spawned uWSGI worker 1 (pid: 8720, cores: 100)
+spawned uWSGI http 1 (pid: 8721)
+/usr/lib/python3.6/site-packages/setuptools/depends.py:2: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+/usr/local/lib64/python3.6/site-packages/skimage/data/__init__.py:107: DeprecationWarning: 
+    Importing file_hash from pooch.utils is DEPRECATED. Please import from the
+    top-level namespace (`from pooch import file_hash`) instead, which is fully
+    backwards compatible with pooch >= 0.1.
+    
+  return file_hash(path) == expected_hash
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x75ff50 pid: 8720 (default app)
+*** running gevent loop engine [addr:0x491050] ***
+[uwsgi-http key: 106.14.25.224:8001 client_addr: 183.211.167.177 client_port: 3354] hr_write(): Broken pipe [plugins/http/http.c line 565]
+*** Starting uWSGI 2.0.20 (64bit) on [Fri Jan 21 15:19:20 2022] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 20 January 2022 09:52:55
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: izuf65cyta1bz7xpttxz8bz
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/deployment
+writing pidfile to /home/deployment/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/deployment
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 100 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 7
+uwsgi socket 0 bound to TCP address 127.0.0.1:44883 (port auto-assigned) fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Nov 16 2020, 16:55:22)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x14b8f50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 2216128 bytes (2164 KB) for 100 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8753)
+spawned uWSGI worker 1 (pid: 8754, cores: 100)
+spawned uWSGI http 1 (pid: 8755)
+/usr/lib/python3.6/site-packages/setuptools/depends.py:2: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+/usr/local/lib64/python3.6/site-packages/skimage/data/__init__.py:107: DeprecationWarning: 
+    Importing file_hash from pooch.utils is DEPRECATED. Please import from the
+    top-level namespace (`from pooch import file_hash`) instead, which is fully
+    backwards compatible with pooch >= 0.1.
+    
+  return file_hash(path) == expected_hash
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x14b8f50 pid: 8754 (default app)
+*** running gevent loop engine [addr:0x491050] ***
+*** Starting uWSGI 2.0.20 (64bit) on [Fri Jan 21 15:25:45 2022] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 20 January 2022 09:52:55
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: izuf65cyta1bz7xpttxz8bz
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/deployment
+writing pidfile to /home/deployment/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/deployment
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 100 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 7
+uwsgi socket 0 bound to TCP address 127.0.0.1:34218 (port auto-assigned) fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Nov 16 2020, 16:55:22)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x15faf50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 2216128 bytes (2164 KB) for 100 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8790)
+spawned uWSGI worker 1 (pid: 8791, cores: 100)
+spawned uWSGI http 1 (pid: 8792)
+/usr/lib/python3.6/site-packages/setuptools/depends.py:2: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+/usr/local/lib64/python3.6/site-packages/skimage/data/__init__.py:107: DeprecationWarning: 
+    Importing file_hash from pooch.utils is DEPRECATED. Please import from the
+    top-level namespace (`from pooch import file_hash`) instead, which is fully
+    backwards compatible with pooch >= 0.1.
+    
+  return file_hash(path) == expected_hash
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x15faf50 pid: 8791 (default app)
+*** running gevent loop engine [addr:0x491050] ***
+*** Starting uWSGI 2.0.20 (64bit) on [Fri Jan 21 15:38:55 2022] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 20 January 2022 09:52:55
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: izuf65cyta1bz7xpttxz8bz
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/deployment
+writing pidfile to /home/deployment/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/deployment
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 100 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 7
+uwsgi socket 0 bound to TCP address 127.0.0.1:35069 (port auto-assigned) fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Nov 16 2020, 16:55:22)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x2626f50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 2216128 bytes (2164 KB) for 100 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8820)
+spawned uWSGI worker 1 (pid: 8821, cores: 100)
+spawned uWSGI http 1 (pid: 8822)
+/usr/lib/python3.6/site-packages/setuptools/depends.py:2: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+/usr/local/lib64/python3.6/site-packages/skimage/data/__init__.py:107: DeprecationWarning: 
+    Importing file_hash from pooch.utils is DEPRECATED. Please import from the
+    top-level namespace (`from pooch import file_hash`) instead, which is fully
+    backwards compatible with pooch >= 0.1.
+    
+  return file_hash(path) == expected_hash
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2626f50 pid: 8821 (default app)
+*** running gevent loop engine [addr:0x491050] ***
+*** Starting uWSGI 2.0.20 (64bit) on [Fri Jan 21 15:45:51 2022] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 20 January 2022 09:52:55
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: izuf65cyta1bz7xpttxz8bz
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/deployment
+writing pidfile to /home/deployment/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/deployment
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 100 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 7
+uwsgi socket 0 bound to TCP address 127.0.0.1:41059 (port auto-assigned) fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Nov 16 2020, 16:55:22)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x1d40f50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 2216128 bytes (2164 KB) for 100 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8856)
+spawned uWSGI worker 1 (pid: 8857, cores: 100)
+spawned uWSGI http 1 (pid: 8858)
+/usr/lib/python3.6/site-packages/setuptools/depends.py:2: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+/usr/local/lib64/python3.6/site-packages/skimage/data/__init__.py:107: DeprecationWarning: 
+    Importing file_hash from pooch.utils is DEPRECATED. Please import from the
+    top-level namespace (`from pooch import file_hash`) instead, which is fully
+    backwards compatible with pooch >= 0.1.
+    
+  return file_hash(path) == expected_hash
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x1d40f50 pid: 8857 (default app)
+*** running gevent loop engine [addr:0x491050] ***
+*** Starting uWSGI 2.0.20 (64bit) on [Fri Jan 21 16:10:35 2022] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 20 January 2022 09:52:55
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: izuf65cyta1bz7xpttxz8bz
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/deployment
+writing pidfile to /home/deployment/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/deployment
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 100 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 7
+uwsgi socket 0 bound to TCP address 127.0.0.1:38733 (port auto-assigned) fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Nov 16 2020, 16:55:22)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x121af50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 2216128 bytes (2164 KB) for 100 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8892)
+spawned uWSGI worker 1 (pid: 8893, cores: 100)
+spawned uWSGI http 1 (pid: 8894)
+/usr/lib/python3.6/site-packages/setuptools/depends.py:2: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+/usr/local/lib64/python3.6/site-packages/skimage/data/__init__.py:107: DeprecationWarning: 
+    Importing file_hash from pooch.utils is DEPRECATED. Please import from the
+    top-level namespace (`from pooch import file_hash`) instead, which is fully
+    backwards compatible with pooch >= 0.1.
+    
+  return file_hash(path) == expected_hash
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x121af50 pid: 8893 (default app)
+*** running gevent loop engine [addr:0x491050] ***
+*** Starting uWSGI 2.0.20 (64bit) on [Fri Jan 21 16:18:43 2022] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 20 January 2022 09:52:55
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: izuf65cyta1bz7xpttxz8bz
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/deployment
+writing pidfile to /home/deployment/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/deployment
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+- async cores set to 100 - fd table size: 1048576
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 7
+uwsgi socket 0 bound to TCP address 127.0.0.1:36177 (port auto-assigned) fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Nov 16 2020, 16:55:22)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x199df50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 2216128 bytes (2164 KB) for 100 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8928)
+spawned uWSGI worker 1 (pid: 8929, cores: 100)
+spawned uWSGI http 1 (pid: 8930)
+/usr/lib/python3.6/site-packages/setuptools/depends.py:2: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+/usr/local/lib64/python3.6/site-packages/skimage/data/__init__.py:107: DeprecationWarning: 
+    Importing file_hash from pooch.utils is DEPRECATED. Please import from the
+    top-level namespace (`from pooch import file_hash`) instead, which is fully
+    backwards compatible with pooch >= 0.1.
+    
+  return file_hash(path) == expected_hash
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x199df50 pid: 8929 (default app)
+*** running gevent loop engine [addr:0x491050] ***
+[uwsgi-http key:  client_addr: 123.160.221.18 client_port: 32809] hr_read(): Connection reset by peer [plugins/http/http.c line 918]
