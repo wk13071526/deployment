@@ -117,3 +117,6 @@
 2022-01-21 16:27:38,270 - INFO - unique_endpoints {''}
 2022-01-21 16:27:38,270 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
 2022-01-21 16:27:44,197 - INFO - apply cost: 8291.142578125 ms
+2022-01-30 07:43:52,936 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-01-30 07:46:59,858 - INFO - 127.0.0.1 - - [30/Jan/2022 07:46:59] "GET / HTTP/1.1" 200 -
+2022-01-30 07:47:20,086 - INFO - 127.0.0.1 - - [30/Jan/2022 07:47:20] "GET /health HTTP/1.1" 200 -
