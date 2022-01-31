@@ -23,7 +23,7 @@ from paddle.utils.download import get_path_from_url
 from src.algorithm.ppgan.faceutils.dlibutils import align_crop
 from src.algorithm.ppgan.faceutils.face_segmentation import FaceSeg
 from src.algorithm.ppgan.models.generators import ResnetUGATITP2CGenerator
-
+from io import BytesIO
 from .base_predictor import BasePredictor
 
 
@@ -71,7 +71,10 @@ class Photo2CartoonPredictor(BasePredictor):
         #pnoto_save_path = os.path.join(self.output_path, 'p2c_photo.png')
         #cv2.imwrite(pnoto_save_path, cv2.cvtColor(face_image, cv2.COLOR_RGB2BGR))
         #cartoon_save_path = os.path.join(self.output_path, 'p2c_cartoon.png')
-        cv2.imwrite("/home/deployment/output/p2c_cartoon.png", cv2.cvtColor(cartoon, cv2.COLOR_RGB2BGR))
+        #cv2.imwrite("/home/deployment/output/p2c_cartoon.png", cv2.cvtColor(cartoon, cv2.COLOR_RGB2BGR))
+        output_buffer = BytesIO()
+        image = Image.fromarray(cv2.cvtColor(cartoon, cv2.COLOR_RGB2BGR))
+        image.save(output_buffer, format="PNG")
         #data = cv2.imencode('.png', cv2.cvtColor(cartoon, cv2.COLOR_RGB2BGR))
         #print("Cartoon image has been saved at '{}'.".format(cartoon_save_path))
-        return
+        return output_buffer
