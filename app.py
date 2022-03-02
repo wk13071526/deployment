@@ -18,20 +18,39 @@ def heart_beat():
     return jsonify({'status': 'UP'})
 
 
-@app.route('/pipe', methods=['POST'])
+@app.route('/face_parser', methods=['POST'])
 def pipe():
-    return get_response()
+    return get_response('face_parser')
 
+@app.route('/photo2cartoon', methods=['POST'])
+def pipe():
+    return get_response('photo2cartoon')
+
+@app.route('/makeup', methods=['POST'])
+def pipe():
+    return get_response('makeup')
+
+@app.route('/pixel2pixel', methods=['POST'])
+def pipe():
+    return get_response('pixel2pixel')
+
+@app.route('/motion_driving', methods=['POST'])
+def pipe():
+    return get_response('motion_driving')
+
+@app.route('/wav2lip', methods=['POST'])
+def pipe():
+    return get_response('wav2lip')
 
 @app.route('/')
 def hello_world():  # put application's code here
     return 'Hello World!'
 
 
-def get_response():
+def get_response(method):
     try:
         start_time = time.time()
-        result = call_algorithm()
+        result = call_algorithm(method)
         duration = time.time() * 1000 - start_time * 1000
         logging.info('apply cost: %s ms', duration)
         if is_binary(result):
@@ -68,7 +87,7 @@ def get_response():
     return response_string
 
 
-def call_algorithm():
+def call_algorithm(method):
     content_type = request.content_type
     logging.info("request contentType: %s ,content_length: %d", content_type, request.content_length)
     if content_type.startswith("application/json"):
@@ -82,7 +101,7 @@ def call_algorithm():
         data = wrap_binary_data(request.data)
     else:
         raise Exception("Invalid content_type: {}".format(content_type))
-    result = deployment.apply(data)
+    result = deployment.apply(method, data)
     return result
 
 

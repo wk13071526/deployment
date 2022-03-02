@@ -16,7 +16,7 @@ import paddle.vision.models.vgg as vgg
 from src.algorithm.ppgan.utils.download import get_path_from_url
 
 
-@GENERATORS.register()
+#@GENERATORS.register()
 class FirstOrderGenerator(nn.Layer):
     """
     Args:

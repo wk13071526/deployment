@@ -226,11 +226,11 @@ class Pixel2Style2PixelPredictor(BasePredictor):
         dst_npy = latents[0].numpy()
 
         os.makedirs(self.output_path, exist_ok=True)
-        save_src_path = os.path.join(self.output_path, 'src.png')
+        save_src_path = os.path.join(self.output_path, 'pixel2pixel_src.png')
         cv2.imwrite(save_src_path, cv2.cvtColor(src_img, cv2.COLOR_RGB2BGR))
-        save_dst_path = os.path.join(self.output_path, 'dst.png')
+        save_dst_path = os.path.join(self.output_path, 'pixel2pixel_dst.png')
         cv2.imwrite(save_dst_path, cv2.cvtColor(dst_img, cv2.COLOR_RGB2BGR))
-        save_npy_path = os.path.join(self.output_path, 'dst.npy')
+        save_npy_path = os.path.join(self.output_path, 'pixel2pixel_dst.npy')
         np.save(save_npy_path, dst_npy)
 
         return src_img, dst_img, dst_npy
