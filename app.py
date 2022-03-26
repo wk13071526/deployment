@@ -17,40 +17,19 @@ logging.basicConfig(filename='deployment.log', level=logging.DEBUG, format=LOG_F
 def heart_beat():
     return jsonify({'status': 'UP'})
 
-
-@app.route('/face_parser', methods=['POST'])
+@app.route('/pipe', methods=['POST'])
 def pipe():
-    return get_response('face_parser')
-
-@app.route('/photo2cartoon', methods=['POST'])
-def pipe():
-    return get_response('photo2cartoon')
-
-@app.route('/makeup', methods=['POST'])
-def pipe():
-    return get_response('makeup')
-
-@app.route('/pixel2pixel', methods=['POST'])
-def pipe():
-    return get_response('pixel2pixel')
-
-@app.route('/motion_driving', methods=['POST'])
-def pipe():
-    return get_response('motion_driving')
-
-@app.route('/wav2lip', methods=['POST'])
-def pipe():
-    return get_response('wav2lip')
+    return get_response()
 
 @app.route('/')
 def hello_world():  # put application's code here
     return 'Hello World!'
 
 
-def get_response(method):
+def get_response():
     try:
         start_time = time.time()
-        result = call_algorithm(method)
+        result = call_algorithm()
         duration = time.time() * 1000 - start_time * 1000
         logging.info('apply cost: %s ms', duration)
         if is_binary(result):
@@ -87,7 +66,7 @@ def get_response(method):
     return response_string
 
 
-def call_algorithm(method):
+def call_algorithm():
     content_type = request.content_type
     logging.info("request contentType: %s ,content_length: %d", content_type, request.content_length)
     if content_type.startswith("application/json"):
@@ -101,7 +80,7 @@ def call_algorithm(method):
         data = wrap_binary_data(request.data)
     else:
         raise Exception("Invalid content_type: {}".format(content_type))
-    result = deployment.apply(method, data)
+    result = deployment.apply(data)
     return result
 
 

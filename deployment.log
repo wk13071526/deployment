@@ -120,3 +120,137 @@
 2022-01-30 07:43:52,936 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 2022-01-30 07:46:59,858 - INFO - 127.0.0.1 - - [30/Jan/2022 07:46:59] "GET / HTTP/1.1" 200 -
 2022-01-30 07:47:20,086 - INFO - 127.0.0.1 - - [30/Jan/2022 07:47:20] "GET /health HTTP/1.1" 200 -
+2022-03-03 13:30:20,195 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101970
+2022-03-03 13:30:20,217 - INFO - apply cost: 21.958740234375 ms
+2022-03-03 13:30:35,776 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101981
+2022-03-03 13:30:36,311 - INFO - unique_endpoints {''}
+2022-03-03 13:30:36,311 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-03-03 13:30:39,952 - INFO - apply cost: 4176.616943359375 ms
+2022-03-03 13:52:16,472 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101981
+2022-03-03 13:52:16,857 - INFO - unique_endpoints {''}
+2022-03-03 13:52:16,857 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-03-03 13:52:20,430 - INFO - apply cost: 3958.477294921875 ms
+2022-03-03 13:52:27,758 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101981
+2022-03-03 13:52:29,240 - ERROR - [Exception] {"error": {"message": "'numpy.ndarray' object has no attribute 'getvalue'", "stacktrace": "Traceback (most recent call last):\n  File \"/WORKSPACE/deployment/app.py\", line 32, in get_response\n    result = call_algorithm()\n  File \"/WORKSPACE/deployment/app.py\", line 83, in call_algorithm\n    result = deployment.apply(data)\n  File \"./src/deployment.py\", line 27, in apply\n    byte_data = output_buffer.getvalue()\nAttributeError: 'numpy.ndarray' object has no attribute 'getvalue'\n", "error_type": "ModelError"}}
+2022-03-03 14:14:54,512 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101981
+2022-03-03 14:14:56,023 - INFO - apply cost: 1511.1806640625 ms
+2022-03-03 14:47:01,770 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101981
+2022-03-03 14:47:03,156 - INFO - apply cost: 1386.2958984375 ms
+2022-03-22 14:46:09,657 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101981
+2022-03-22 14:46:11,025 - INFO - apply cost: 1368.21044921875 ms
+2022-03-22 14:47:27,591 - INFO - request contentType: application/json ,content_length: 517014
+2022-03-22 14:47:27,923 - INFO - apply cost: 332.7314453125 ms
+2022-03-22 14:47:40,149 - INFO - request contentType: application/json ,content_length: 517014
+2022-03-22 14:47:40,487 - INFO - apply cost: 338.314208984375 ms
+2022-03-22 14:48:00,365 - INFO - request contentType: application/json ,content_length: 364475
+2022-03-22 14:48:00,487 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\x1a'
+2022-03-22 14:48:00,758 - INFO - unique_endpoints {''}
+2022-03-22 14:48:00,758 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-03-22 14:48:04,351 - INFO - apply cost: 3986.2265625 ms
+2022-03-22 14:52:42,122 - INFO - request contentType: application/json ,content_length: 364475
+2022-03-22 14:52:42,177 - INFO - apply cost: 54.458984375 ms
+2022-03-22 14:52:58,336 - INFO - request contentType: application/json ,content_length: 364475
+2022-03-22 14:52:58,444 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\x1a'
+2022-03-22 14:52:58,770 - INFO - unique_endpoints {''}
+2022-03-22 14:52:58,770 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-03-22 14:53:02,316 - INFO - apply cost: 3980.03125 ms
+2022-03-22 14:53:29,620 - INFO - request contentType: application/json ,content_length: 309703
+2022-03-22 14:53:29,683 - INFO - apply cost: 62.861328125 ms
+2022-03-22 14:53:37,198 - INFO - request contentType: application/json ,content_length: 309703
+2022-03-22 14:53:37,288 - INFO - apply cost: 90.11181640625 ms
+2022-03-22 14:54:01,798 - INFO - request contentType: application/json ,content_length: 498690
+2022-03-22 14:54:02,097 - INFO - apply cost: 298.941650390625 ms
+2022-03-22 14:54:51,817 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101981
+2022-03-22 14:54:52,163 - INFO - unique_endpoints {''}
+2022-03-22 14:54:52,163 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-03-22 14:54:55,710 - INFO - apply cost: 3893.578125 ms
+2022-03-22 14:54:59,667 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101981
+2022-03-22 14:55:00,015 - INFO - unique_endpoints {''}
+2022-03-22 14:55:00,015 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-03-22 14:55:03,590 - INFO - apply cost: 3922.642578125 ms
+2022-03-22 14:55:51,156 - INFO - request contentType: application/json ,content_length: 185733
+2022-03-22 14:55:51,223 - INFO - apply cost: 67.308837890625 ms
+2022-03-22 14:55:55,442 - INFO - request contentType: application/json ,content_length: 185733
+2022-03-22 14:55:55,504 - INFO - apply cost: 61.5400390625 ms
+2022-03-23 15:20:40,816 - INFO - request contentType: application/json ,content_length: 93145
+2022-03-23 15:20:40,864 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2022-03-23 15:20:40,864 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00&'
+2022-03-23 15:20:41,136 - ERROR - [Exception] {"error": {"message": "Cannot detect face!!!", "stacktrace": "Traceback (most recent call last):\n  File \"/WORKSPACE/deployment/app.py\", line 32, in get_response\n    result = call_algorithm()\n  File \"/WORKSPACE/deployment/app.py\", line 83, in call_algorithm\n    result = deployment.apply(data)\n  File \"./src/deployment.py\", line 19, in apply\n    imgdata = input_data.get('imgdata', None)\n  File \"./src/algorithm/ppgan/apps/photo2cartoon_predictor.py\", line 52, in run\n    face_image = align_crop(image)\n  File \"./src/algorithm/ppgan/faceutils/dlibutils/face_align.py\", line 26, in align_crop\n    assert len(faces) > 0, 'Cannot detect face!!!'\nAssertionError: Cannot detect face!!!\n", "error_type": "ModelError"}}
+2022-03-23 15:20:49,937 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101981
+2022-03-23 15:20:51,289 - INFO - apply cost: 1351.94091796875 ms
+2022-03-23 15:20:56,805 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101981
+2022-03-23 15:20:57,130 - INFO - unique_endpoints {''}
+2022-03-23 15:20:57,131 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-03-23 15:21:00,635 - INFO - apply cost: 3830.944091796875 ms
+2022-03-23 15:21:01,071 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101981
+2022-03-23 15:21:01,442 - INFO - unique_endpoints {''}
+2022-03-23 15:21:01,443 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-03-23 15:21:04,941 - INFO - apply cost: 3870.273193359375 ms
+2022-03-23 15:21:34,896 - INFO - request contentType: application/json ,content_length: 93145
+2022-03-23 15:21:34,947 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2022-03-23 15:21:34,947 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00&'
+2022-03-23 15:21:35,224 - ERROR - [Exception] {"error": {"message": "Cannot detect face!!!", "stacktrace": "Traceback (most recent call last):\n  File \"/WORKSPACE/deployment/app.py\", line 32, in get_response\n    result = call_algorithm()\n  File \"/WORKSPACE/deployment/app.py\", line 83, in call_algorithm\n    result = deployment.apply(data)\n  File \"./src/deployment.py\", line 19, in apply\n    imgdata = input_data.get('imgdata', None)\n  File \"./src/algorithm/ppgan/apps/photo2cartoon_predictor.py\", line 52, in run\n    face_image = align_crop(image)\n  File \"./src/algorithm/ppgan/faceutils/dlibutils/face_align.py\", line 26, in align_crop\n    assert len(faces) > 0, 'Cannot detect face!!!'\nAssertionError: Cannot detect face!!!\n", "error_type": "ModelError"}}
+2022-03-23 15:21:40,676 - INFO - request contentType: application/json ,content_length: 93145
+2022-03-23 15:21:40,696 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2022-03-23 15:21:40,696 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00&'
+2022-03-23 15:21:40,975 - ERROR - [Exception] {"error": {"message": "Cannot detect face!!!", "stacktrace": "Traceback (most recent call last):\n  File \"/WORKSPACE/deployment/app.py\", line 32, in get_response\n    result = call_algorithm()\n  File \"/WORKSPACE/deployment/app.py\", line 83, in call_algorithm\n    result = deployment.apply(data)\n  File \"./src/deployment.py\", line 19, in apply\n    imgdata = input_data.get('imgdata', None)\n  File \"./src/algorithm/ppgan/apps/photo2cartoon_predictor.py\", line 52, in run\n    face_image = align_crop(image)\n  File \"./src/algorithm/ppgan/faceutils/dlibutils/face_align.py\", line 26, in align_crop\n    assert len(faces) > 0, 'Cannot detect face!!!'\nAssertionError: Cannot detect face!!!\n", "error_type": "ModelError"}}
+2022-03-23 15:22:58,147 - INFO - request contentType: application/json ,content_length: 85403
+2022-03-23 15:22:58,505 - INFO - unique_endpoints {''}
+2022-03-23 15:22:58,505 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-03-23 15:23:02,051 - INFO - apply cost: 3904.79052734375 ms
+2022-03-23 15:23:38,365 - INFO - request contentType: application/json ,content_length: 85403
+2022-03-23 15:23:39,676 - INFO - apply cost: 1311.517578125 ms
+2022-03-23 15:23:50,241 - INFO - request contentType: application/json ,content_length: 85403
+2022-03-23 15:23:50,294 - INFO - apply cost: 53.074951171875 ms
+2022-03-23 15:24:14,352 - INFO - request contentType: application/json ,content_length: 85403
+2022-03-23 15:24:14,403 - INFO - apply cost: 50.6904296875 ms
+2022-03-23 15:24:29,979 - INFO - request contentType: application/json ,content_length: 85403
+2022-03-23 15:24:30,032 - INFO - apply cost: 53.739013671875 ms
+2022-03-23 15:24:42,601 - INFO - request contentType: application/json ,content_length: 85403
+2022-03-23 15:24:42,649 - INFO - apply cost: 48.876953125 ms
+2022-03-23 15:25:32,885 - INFO - request contentType: application/json ,content_length: 85403
+2022-03-23 15:25:32,935 - INFO - apply cost: 49.14892578125 ms
+2022-03-23 15:25:52,604 - INFO - request contentType: application/json ,content_length: 85403
+2022-03-23 15:25:52,651 - INFO - apply cost: 47.81982421875 ms
+2022-03-23 15:26:19,372 - INFO - request contentType: application/json ,content_length: 85403
+2022-03-23 15:26:19,423 - INFO - apply cost: 50.185546875 ms
+2022-03-24 10:17:07,392 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101981
+2022-03-24 10:17:07,744 - INFO - unique_endpoints {''}
+2022-03-24 10:17:07,745 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-03-24 10:17:11,290 - INFO - apply cost: 3897.7119140625 ms
+2022-03-24 10:20:17,154 - INFO - request contentType: application/json ,content_length: 85403
+2022-03-24 10:20:18,525 - INFO - apply cost: 1370.43603515625 ms
+2022-03-24 10:22:03,206 - INFO - request contentType: application/json ,content_length: 85403
+2022-03-24 10:22:03,585 - INFO - unique_endpoints {''}
+2022-03-24 10:22:03,585 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-03-24 10:22:07,076 - INFO - apply cost: 3869.736083984375 ms
+2022-03-25 08:37:28,701 - INFO - request contentType: application/json ,content_length: 85403
+2022-03-25 08:37:29,076 - INFO - unique_endpoints {''}
+2022-03-25 08:37:29,076 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-03-25 08:37:32,535 - INFO - apply cost: 3833.5849609375 ms
+2022-03-25 08:42:06,001 - INFO - request contentType: application/json ,content_length: 85403
+2022-03-25 08:42:07,375 - INFO - apply cost: 1374.20654296875 ms
+2022-03-25 08:42:12,245 - INFO - request contentType: application/json ,content_length: 85403
+2022-03-25 08:42:13,603 - INFO - apply cost: 1358.158935546875 ms
+2022-03-25 14:26:21,107 - INFO - request contentType: application/json ,content_length: 85403
+2022-03-25 14:26:21,520 - INFO - unique_endpoints {''}
+2022-03-25 14:26:21,520 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-03-25 14:26:24,979 - INFO - apply cost: 3872.159423828125 ms
+2022-03-25 14:26:34,129 - INFO - request contentType: application/json ,content_length: 85403
+2022-03-25 14:26:34,507 - INFO - unique_endpoints {''}
+2022-03-25 14:26:34,507 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-03-25 14:26:37,977 - INFO - apply cost: 3847.932373046875 ms
+2022-03-26 13:26:51,545 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101981
+2022-03-26 13:26:51,926 - INFO - unique_endpoints {''}
+2022-03-26 13:26:51,926 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-03-26 13:26:55,432 - INFO - apply cost: 3887.12646484375 ms
+2022-03-26 13:27:01,318 - INFO - request contentType: application/json; charset=utf-8 ,content_length: 101981
+2022-03-26 13:27:02,723 - INFO - apply cost: 1404.57666015625 ms
+2022-03-26 14:29:08,788 - INFO - request contentType: application/json ,content_length: 242826
+2022-03-26 14:29:08,929 - INFO - apply cost: 140.868896484375 ms
+2022-03-26 14:55:37,660 - INFO - request contentType: application/json ,content_length: 63386
+2022-03-26 14:55:37,723 - INFO - apply cost: 63.622314453125 ms
+2022-03-26 15:27:20,188 - INFO - request contentType: application/json ,content_length: 59930
+2022-03-26 15:27:20,532 - INFO - unique_endpoints {''}
+2022-03-26 15:27:20,532 - INFO - Found /root/.cache/paddle/hapi/weights/lms.dat
+2022-03-26 15:27:24,001 - INFO - apply cost: 3812.754638671875 ms

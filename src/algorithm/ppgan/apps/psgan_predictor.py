@@ -23,14 +23,15 @@ import numpy as np
 import paddle
 import paddle.vision.transforms as T
 from paddle.utils.download import get_weights_path_from_url
-import ppgan.faceutils as futils
-from ppgan.utils.options import parse_args
-from ppgan.utils.config import get_config
-from ppgan.utils.setup import setup
-from ppgan.utils.filesystem import load
-from ppgan.models.builder import build_model
-from ppgan.utils.preprocess import *
+import src.algorithm.ppgan.faceutils as futils
+from src.algorithm.ppgan.utils.options import parse_args
+from src.algorithm.ppgan.utils.config import get_config
+from src.algorithm.ppgan.utils.setup import setup
+from src.algorithm.ppgan.utils.filesystem import load
+from src.algorithm.ppgan.models.builder import build_model
+from src.algorithm.ppgan.utils.preprocess import *
 from .base_predictor import BasePredictor
+from io import BytesIO
 
 
 def toImage(net_output):
@@ -179,18 +180,18 @@ class PSGANPredictor(BasePredictor):
             self.weight_path = get_weights_path_from_url(PS_WEIGHT_URL)
         self.output_path = output_path
 
-    def run(self):
+    def run(self, source_img, reference_dir):
         setup(self.args, self.cfg)
         inference = Inference(self.cfg, self.weight_path)
         postprocess = PostProcess(self.cfg)
 
         try:
-            source = Image.open(self.args.source_path).convert("RGB")
+            source = Image.open(source_img).convert("RGB")
         except IOError:
-            print("Error: {} is not exist".format(self.args.source_path))
+            print("Error: {} is not exist".format(source_img))
             sys.exit()
 
-        reference_paths = list(Path(self.args.reference_dir).glob("*"))
+        reference_paths = list(Path(reference_dir).glob("*"))
         if len(reference_paths) == 0:
             print("Error: Can't find image file in {}.".format(
                 self.args.reference_dir))
@@ -214,6 +215,9 @@ class PSGANPredictor(BasePredictor):
 
             save_path = os.path.join(self.output_path,
                                      'transfered_ref_' + ref_img_name)
-            image.save(save_path)
-            print('Transfered image {} has been saved!'.format(save_path))
+            #image.save(save_path)
+            output_buffer = BytesIO()
+            image.save(output_buffer, format="PNG")
+            #print('Transfered image {} has been saved!'.format(save_path))
         print('done!!!')
+        return output_buffer

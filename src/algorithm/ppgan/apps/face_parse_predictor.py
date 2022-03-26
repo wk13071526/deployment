@@ -24,7 +24,7 @@ import src.algorithm.ppgan.faceutils as futils
 from src.algorithm.ppgan.utils.preprocess import *
 from src.algorithm.ppgan.utils.visual import mask2image
 from .base_predictor import BasePredictor
-
+from io import BytesIO
 
 class FaceParsePredictor(BasePredictor):
     def __init__(self, output_path='output'):
@@ -52,8 +52,11 @@ class FaceParsePredictor(BasePredictor):
         mask = cv2.resize(mask.numpy(), (256, 256))
         mask = mask.astype(np.uint8)
         mask = mask2image(mask)
-        if not os.path.exists(self.output_path):
-            os.makedirs(self.output_path)
-        save_path = os.path.join(self.output_path, 'face_parse.png')
-        cv2.imwrite(save_path, mask)
-        return mask
+        output_buffer = BytesIO()
+        image = Image.fromarray(mask)
+        image.save(output_buffer, format="PNG")
+        #if not os.path.exists(self.output_path):
+        #    os.makedirs(self.output_path)
+        #save_path = os.path.join(self.output_path, 'face_parse.png')
+        #cv2.imwrite(save_path, mask)
+        return output_buffer 
