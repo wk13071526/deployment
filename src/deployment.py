@@ -4,10 +4,10 @@ from io import BytesIO
 import base64
 from src.algorithm.ppgan.apps import Photo2CartoonPredictor
 from src.algorithm.ppgan.apps import FaceParsePredictor
-from easydict import EasyDict as edict
-from src.algorithm.ppgan.utils.config import get_config
-from src.algorithm.ppgan.apps import PSGANPredictor
-import os
+# from easydict import EasyDict as edict
+# from src.algorithm.ppgan.utils.config import get_config
+# from src.algorithm.ppgan.apps import PSGANPredictor
+# import os
 
 
 p2c = Photo2CartoonPredictor()
@@ -15,21 +15,21 @@ fp = FaceParsePredictor()
 
 def apply(input_data): 
     method_type = input_data.get('type', None)
-    if method_type == '1':
+    if method_type == '0':
         imgdata = input_data.get('imgdata', None)
         byte_data = base64.b64decode(imgdata)
         image_data = BytesIO(byte_data)
         output_buffer = p2c.run(image_data)
         byte_data = output_buffer.getvalue()
         return byte_data
-    elif method_type == '2':
+    elif method_type == '1':
         imgdata = input_data.get('imgdata', None)
         byte_data = base64.b64decode(imgdata)
         image_data = BytesIO(byte_data)
         output_buffer = fp.run(image_data)
         byte_data = output_buffer.getvalue()
         return byte_data 
-    elif method_type == '3':
+    elif method_type == '2':
         params = dict()
         params["evaluate_only"] = True
         params["profiler_options"] = None

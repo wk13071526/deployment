@@ -17,9 +17,11 @@ logging.basicConfig(filename='deployment.log', level=logging.DEBUG, format=LOG_F
 def heart_beat():
     return jsonify({'status': 'UP'})
 
+
 @app.route('/pipe', methods=['POST'])
 def pipe():
     return get_response()
+
 
 @app.route('/')
 def hello_world():  # put application's code here
@@ -36,7 +38,7 @@ def get_response():
             content_type = 'binary'
             result = base64.b64encode(result)
             # In python 3, the encoded result is a byte array which cannot be
-            # json serialized so we need to turn this into a string.
+            # json serialized, so we need to turn this into a string.
             if not isinstance(result, six.string_types):
                 result = str(result, 'utf-8')
         elif isinstance(result, six.string_types) or isinstance(result, six.text_type):
