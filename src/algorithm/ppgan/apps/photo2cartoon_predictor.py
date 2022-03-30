@@ -73,7 +73,7 @@ class Photo2CartoonPredictor(BasePredictor):
         #cartoon_save_path = os.path.join(self.output_path, 'p2c_cartoon.png')
         #cv2.imwrite("/home/deployment/output/p2c_cartoon.png", cv2.cvtColor(cartoon, cv2.COLOR_RGB2BGR))
         output_buffer = BytesIO()
-        image = Image.fromarray(cv2.cvtColor(cartoon, cv2.COLOR_RGB2BGR))
+        image = Image.fromarray(cartoon)
         image.save(output_buffer, format="PNG")
         #data = cv2.imencode('.png', cv2.cvtColor(cartoon, cv2.COLOR_RGB2BGR))
         #print("Cartoon image has been saved at '{}'.".format(cartoon_save_path))

@@ -17,11 +17,9 @@ logging.basicConfig(filename='deployment.log', level=logging.DEBUG, format=LOG_F
 def heart_beat():
     return jsonify({'status': 'UP'})
 
-
 @app.route('/pipe', methods=['POST'])
 def pipe():
     return get_response()
-
 
 @app.route('/')
 def hello_world():  # put application's code here
